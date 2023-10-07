@@ -61,26 +61,26 @@
         <input type="text" class="form-control" id="recipeType" placeholder="Enter recipe type">
         </div>
         <div class="form-group">
+          <label for="recipeDifficulty">Difficulty:</label>
+          <select name="Difficulty" id="difficulty">
+            <option value="level1">난이도 1</option>
+            <option value="level2">난이도 2</option>
+            <option value="level3">난이도 3</option>
+            <option value="level4">난이도 4</option>
+            <option value="level5">난이도 5</option>
+          </select>
+        </div>
+        <div class="form-group">
         <label for="recipeImage">Recipe Image URL:</label>
         <input type="file" class="real-upload" accept="image/*" required multiple>
         </div>
         <div class="form-group">
         <label for="recipeIngredients">Ingredients:</label>
-        <textarea class="form-control" id="recipeIngredients" placeholder="Enter ingredients" rows="4"></textarea>
+        <textarea class="form-control" id="recipeIngredients" placeholder="Enter ingredients" rows="4">hello world</textarea>
         </div>
         <div class="form-group">
         <label for="recipeInstructions">Instructions:</label>
         <textarea class="form-control" id="recipeInstructions" placeholder="Enter instructions" rows="4"></textarea>
-        </div>
-        <div class="form-group">
-        <label for="recipeDifficulty">Difficulty:</label>
-        <select name="school-year" id="school-year">
-          <option value="level1">난이도 1</option>
-          <option value="level2">난이도 2</option>
-          <option value="level3">난이도 3</option>
-          <option value="level4">난이도 4</option>
-          <option value="level5">난이도 5</option>
-      </select><br>
         </div>
         <button type="button" class="btn btn-primary" onclick="addRecipe()">Add</button>
     </form>
