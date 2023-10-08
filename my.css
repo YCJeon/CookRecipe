@@ -39,6 +39,6 @@ padding: 25px;
 .panel-body img {
     max-height: 100%;
     width: auto;
-    height: 250px; /* Make the image fill the panel vertically */
+    height: 200px; /* Make the image fill the panel vertically */
     object-fit: cover; /* Ensure the entire image is displayed */
 }
