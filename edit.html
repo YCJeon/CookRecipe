@@ -50,15 +50,15 @@
         </div>
       </nav>
     <div class="container">
-    <h2>Add Recipe</h2>
+    <h2>Edit Recipe</h2>
     <form>
         <div class="form-group">
         <label for="recipeName">Recipe Name:</label>
-        <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name">
+        <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name">봉골레 파스타
         </div>
         <div class="form-group">
         <label for="recipeType">Recipe Type:</label>
-        <input type="text" class="form-control" id="recipeType" placeholder="Enter recipe type">
+        <input type="text" class="form-control" id="recipeType" placeholder="Enter recipe type">파스타
         </div>
         <div class="form-group">
           <label for="recipeDifficulty">Difficulty:</label>
@@ -76,11 +76,39 @@
         </div>
         <div class="form-group">
         <label for="recipeIngredients">Ingredients:</label>
-        <textarea class="form-control" id="recipeIngredients" placeholder="Enter ingredients" rows="4"></textarea>
+        <textarea class="form-control" id="recipeIngredients" placeholder="Enter ingredients" rows="4">
+            <p>Ingredients:</p>
+            <ul>
+                <li>스파게티면 120g</li>
+                <li>고기 느타리 버섯 약간</li>
+                <li>페퍼론치노 또는 베트남 건고추 1-5개</li>
+                <li>바지락 200g</li>
+                <li>올리브오일 적당량</li>
+                <li>통마늘 6-7개</li>
+                <li>화이트 와인 1/3컵</li>
+                <li>면수 약간</li>
+                <li>소금 적당량</li>
+                <li>후추가루 약간</li>
+                <li>치즈가루 약간</li>
+            </ul>
+        </textarea>
         </div>
         <div class="form-group">
         <label for="recipeInstructions">Instructions:</label>
-        <textarea class="form-control" id="recipeInstructions" placeholder="Enter instructions" rows="4"></textarea>
+        <textarea class="form-control" id="recipeInstructions" placeholder="Enter instructions" rows="4">
+            <p>Instructions:</p>
+            <ol>
+                <li>바지락 해감</li>
+                <li>재료 손질</li>
+                <li>스파게티 면 8~9분 삶기</li>
+                <li>기름 두르고 재료 볶기</li>
+                <li>바지락도 같이 볶기</li>
+                <li>볶던 재료에 화이트 와인 추가</li>
+                <li>면 넣고 같이 볶기</li>
+                <li>간보면서 소금추가</li>
+                <li>마지막 치즈가루 추가</li>
+            </ol>
+        </textarea>
         </div>
         <button type="button" class="btn btn-primary" onclick="addRecipe()">Add</button>
     </form>
