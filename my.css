@@ -33,3 +33,7 @@ padding: 25px;
     float: right;
     margin-right: 10px;
 }
+.panel-body{
+    width: 100px;
+    height: 200px;
+}
