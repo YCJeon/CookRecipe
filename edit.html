@@ -9,9 +9,48 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href ="./my.css">
     <script>
-        function addRecipe() {
-          alert("게시물이 추가됩니다!");
-          window.location.href = "index.html";
+        function editRecipe() {
+            const recipeName = document.getElementById("recipeName").value;
+            const recipeType = document.getElementById("recipeType").value;
+            const difficulty = document.getElementById("difficulty").value;
+            const recipeImage = document.querySelector(".real-upload").value;
+            const recipeIngredients = document.getElementById("recipeIngredients").value;
+            const recipeInstructions = document.getElementById("recipeInstructions").value;
+
+            // Validate inputs
+            if (recipeName === "") {
+                alert("레시피 이름을 적어주세요.");
+                return;
+            }
+
+            if (recipeType === "") {
+                alert("레시피 종류를 적어주세요.");
+                return;
+            }
+
+            if (difficulty === "") {
+                alert("난이도를 골라주세요.");
+                return;
+            }
+
+            if (recipeImage === "") {
+                alert("이미지를 선택해주세요.");
+                return;
+            }
+
+            if (recipeIngredients === "") {
+                alert("재료를 적어주세요.");
+                return;
+            }
+
+            if (recipeInstructions === "") {
+                alert("조리법을 적어주세요.");
+                return;
+            }
+
+            // If all inputs are valid, proceed with editing the recipe
+            alert("게시물을 수정할까요?");
+            window.location.href = "index.html";
         }
     </script>
         
@@ -93,7 +132,6 @@
         <div class="form-group">
         <label for="recipeInstructions">Instructions:</label>
         <textarea class="form-control" id="recipeInstructions" placeholder="Enter instructions" rows="4">
-
 바지락 해감
 재료 손질
 스파게티 면 8~9분 삶기
@@ -105,7 +143,7 @@
 마지막 치즈가루 추가
         </textarea>
         </div>
-        <button type="button" class="btn btn-primary" onclick="addRecipe()">Add</button>
+        <button type="button" class="btn btn-primary" onclick="editRecipe()">수정</button>
     </form>
     </div>
 </body>

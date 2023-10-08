@@ -42,3 +42,6 @@ padding: 25px;
     height: 185px; /* Make the image fill the panel vertically */
     object-fit: cover; /* Ensure the entire image is displayed */
 }
+.stars {
+    color: gold; /* Color of the stars */
+}
