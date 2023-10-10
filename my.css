@@ -45,3 +45,6 @@ padding: 25px;
 .stars {
     color: gold; /* Color of the stars */
 }
+.btn-primary{
+    margin-bottom: 100px;
+}
