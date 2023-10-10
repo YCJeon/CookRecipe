@@ -45,6 +45,9 @@
             alert("게시물이 추가됩니다.");
             window.location.href = "index.html";
         }
+      function back(){
+        window.location.href = "index";
+      }
     </script>
         
 </head>
@@ -115,6 +118,7 @@
         <textarea class="form-control" id="recipeInstructions" placeholder="Enter instructions" rows="4"></textarea>
         </div>
         <button type="button" class="btn btn-primary" onclick="addRecipe()">Add</button>
+        <button type="button" class="btn btn-primary" onclick="backpage()">Back</button>
     </form>
     </div>
 </body>
