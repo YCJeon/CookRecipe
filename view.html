@@ -18,6 +18,9 @@
         alert("취소하였습니다.");
       }
     }
+    function backpage(){
+        window.location.href = "index.html";
+    }
   </script>
 </head>
 <body>
@@ -57,8 +60,9 @@
 
 <div class="container"> 
     <div class="recipe-details">
-        <button class="back_button" onclick="deleteRecipe()">Delete</button>
+        <button class="delete_button" onclick="deleteRecipe()">Delete</button>
         <button class="edit_button" ><a href="edit.html">Edit</a></button>
+        <button class="back_button" onclick="backpage()">Back</button>
         <h2>양식 / 봉골레 파스타  <span class="stars">&#9733;&#9733;&#9733;</span></h2>
         <img src="./img/food1.jpeg" class="img-responsive" style="width:70%" alt="Recipe Image">
         <p>Ingredients:</p>
