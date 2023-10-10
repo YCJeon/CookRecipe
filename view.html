@@ -10,7 +10,13 @@
   <link rel="stylesheet" href ="./my.css">
   <script>
     function deleteRecipe(){
-      alert("게시물을 삭제할까요?");
+      if(confirm("게시물을 삭제할까요?")){
+        alert("게시물이 삭제되었습니다!");
+        window.location.href = "index.html";
+      }
+      else{
+        alert("취소하였습니다.");
+      }
     }
   </script>
 </head>

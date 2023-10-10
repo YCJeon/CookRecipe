@@ -48,8 +48,13 @@
             }
 
             // If all inputs are valid, proceed with editing the recipe
-            alert("게시물을 수정할까요?");
-            window.location.href = "index.html";
+            if(confirm("게시물을 수정하시겠습니까?")){
+              alert("게시물이 수정되었습니다!");
+              window.location.href = "index.html";
+            }
+            else{
+              alert("취소하였습니다.");
+            }
         }
     </script>
         
